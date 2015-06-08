@@ -1,0 +1,10 @@
+<h1>List Blogs</h1>
+<% if !@blogs.blank? %>
+<%= @blogs.each do |blog |%>
+  <div>
+  	<h1><%= blog.title %></h1>
+  </div>
+<% end %>
+<% else %>
+	<h4>No blogs present</h4>
+<% end %>	

@@ -40,6 +40,8 @@ gem 'spring',        group: :development
 
 gem "devise"                           # User authentication stuff
 
+# gem "pg"                               # PostgreSQL database
+
 group :test, :development do
   gem "rspec", "3.0.0"
   gem "rspec-rails", "3.0.0"
