@@ -10,6 +10,11 @@ class BlogsController < ApplicationController
     blog_params
   end
 
+  def destroy
+    blog = Blog.find(params[:id])
+    blog.destroy if blog.present?
+  end
+
   private
   def blog_params
     params.permit(:title, :text)

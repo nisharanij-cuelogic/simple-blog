@@ -55,5 +55,9 @@ Rails.application.routes.draw do
   #   end
 
   resources :blogs do
-  end  
+  end 
+
+  # resources :editors do
+  post "login"  => "editors#login"
+  # end  
 end

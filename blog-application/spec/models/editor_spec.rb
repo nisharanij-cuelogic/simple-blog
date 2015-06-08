@@ -1,5 +1,12 @@
-require 'rails_helper'
+require "spec_helper.rb"
+require "editor"
 
-RSpec.describe Editor, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe 'Editor' do
+  context "login" do
+    it "successfully" do
+      editor = Editor.new
+      editors = editor.login([email:'admin@blogpost.com', password:'12345'])
+      expect(editors.count).to eql(1)
+    end
+  end
 end

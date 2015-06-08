@@ -5,24 +5,16 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
+* Ruby 2.1
 
 * Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   rake db:create
+   rake db:migrate
+   rake db:seed
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*This is simple blog trapping application using rails 4.1, As per requirement there will editor and guest user are the actors for application
+
+*This application is still in process, right now only backed part for api's is under consideration
+
+*We are following TDD which will cover minimal code testing with the help of RSpec
