@@ -55,6 +55,8 @@ Rails.application.routes.draw do
   #   end
 
   resources :blogs do
+    post "publish" => 'blogs#publish'
+    post "unpublish" => 'blogs#unpublish'
   end 
 
   # resources :editors do

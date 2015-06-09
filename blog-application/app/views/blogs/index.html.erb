@@ -1,10 +1,11 @@
 <h1>List Blogs</h1>
-<% if !@blogs.blank? %>
-<%= @blogs.each do |blog |%>
+<div style="float:right"><%= link_to "Add New Blog", new_blog_path %></div>
+<% if @blogs.present? %>
+  <% @blogs.each do |blog |%>
   <div>
-  	<h1><%= blog.title %></h1>
+  	<h3><%= link_to blog.title, blog_path(:id => blog.id) %></h3>
   </div>
-<% end %>
+  <% end %>
 <% else %>
 	<h4>No blogs present</h4>
 <% end %>	
