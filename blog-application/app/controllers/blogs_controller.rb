@@ -1,13 +1,13 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.all
+     BlogSearcher.find
   end 
 
   def new    
   end
 
   def create
-    blog_params
+    BlogCreator.create(blog_params)
   end
 
   def destroy
