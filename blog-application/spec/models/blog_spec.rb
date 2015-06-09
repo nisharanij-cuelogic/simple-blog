@@ -20,13 +20,13 @@ describe 'Blog' do
     it "valid title" do
       blog = Blog.new(text:'First Blog')
       blog.save
-      expect(blog.valid?).to eql(true)
+      expect(blog.valid?).to eql(false)
     end
 
     it "valid and unique title" do
       blog = Blog.new(title:'Blog1')
       blog.save
-      expect(blog.valid?).to eql(true)
+      expect(blog.valid?).to eql(false)
     end
   end
 end

@@ -1,12 +1,13 @@
 require "spec_helper.rb"
 require "editor"
 
-describe 'Editor' do
+RSpec.describe Editor, :type => :model do
   context "login" do
-    it "successfully" do
-      editor = Editor.new
-      editors = editor.login([email:'admin@blogpost.com', password:'12345'])
+  	it 'should successful' do
+  	  editor = Editor.new	
+  	  editors = editor.login({email:'admin@blogpost.com', password:'12345'})
+  	  p "#{editors.count}"
       expect(editors.count).to eql(1)
-    end
+  	end
   end
 end
