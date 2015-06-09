@@ -2,14 +2,6 @@ require "spec_helper.rb"
 require "blog"
 
 describe 'Blog' do
-  context "should exist" do
-    it "at least one" do
-      expect(Blog.count).to eql(0)      
-    end
-  end
-end
-
-describe 'Blog' do
   context "should have" do
     it "valid title and text" do
       blog = Blog.new(title:'Blog1', text:'WHy to add blog')
