@@ -18,3 +18,8 @@ Things you may want to cover:
 *This application is still in process, right now only backed part for api's is under consideration
 
 *We are following TDD which will cover minimal code testing with the help of RSpec
+
+* Completed till CRUD for blog using services
+
+* Written test cases for some of the services and models, command to check same is as follows
+  bundle exec rspec 
